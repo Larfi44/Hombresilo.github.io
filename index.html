@@ -1,0 +1,4602 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hombresilo</title>
+    <link rel="icon" href="img/Logo Hombresilo.jpg" />
+    <link rel="stylesheet" href="Hombresilo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="main body">
+
+    <header>
+      <div class"btnH">
+        <button id="main" type="button" class="btn btn-primary btnHeader">Главная</button>
+        <button id="guilds" href="" type="button" class="btn btn-primary btnHeader">Гильдии</button>
+        <button id="mobs" type="button" class="btn btn-primary btnHeader">Мобы</button>
+        <button id="achievements" type="button" class="btn btn-primary btnHeader">Достижения</button>
+        <button id="music" type="button" class="btn btn-primary btnHeader">Музыка</button>
+        <button id="rest" type="button" class="btn btn-primary btnHeader">Другое</button>
+      </div>
+    </header>
+    
+    <img src="img/btnTop.png" id="roll">
+
+    <main>
+
+      <h4 class="p" id="M">
+        Hombresilo - это игра двух людей: KPbIM2017 и Larfi. Первая
+        версия игры создана в 2021 году, а задумки были ещё раньше. В этот
+        проект каждый может предложить какую-либо свою идею. На этом сайте будет
+        появляться новая информация по игре.
+      </h4>
+      <div class="p">
+        <h3>Сюжет:</h3>
+        <p>
+          Бог KPbIM2017 создавал мир. Он создавал его ровно 1 неделю. Всё в этом мире процветало, появились
+          разумные существа - человечки. Одна из процветающих планет - Маран, 
+          в которой некоторые человечки разбились на некие государства, назваемые гильдиями.
+          А также, помимо человечков, этот мир полон разных других неразумных существ (мобов)!
+          Позже на планете Маран появился новый
+          очередной человечек, ничего не знающий и беззащитный (пока). Он хочет
+          все изучить и научится всему в этом мире. Вы начинаете играть за него
+          и начинаете захватывающее приключение!
+          Также есть ещё много разных других режимов и настроек начала игры!
+        </p>
+      </div>
+      <div class="p">
+        <h3>Режимы:</h3>
+        <ul>
+          <li>Выживание</li>
+          <li>Креатив</li>
+          <li>Уровни</li>
+          <li>Осада</li>
+          <li>Правители</li>
+          <li>Битва рандома</li>
+          <li>Боссфайт</li>
+          <li>Сюжет</li>
+        </ul>
+      </div>
+
+      <h3 class="p2 mb-3" id="M">Гильдии:</h3>
+      <div class="p2">
+      <p>Гильдии - некие государства, на которые разбились некоторые человечки на планете Маран, а также на других просторах вселенной.
+        Игрок может вступить в одну из гильдий или даже создать свою! У каждой гильдии есть название, цвет обозначения и отношения с другими гильдиями.</p>
+      <p style="margin-top: 10px;">Отношение гильдии с другой гильдией (или с игроком): от -100 (самое плохое) до +100 (самое лучшее), 0 - нейтральное.</p>
+      <p style="margin-top: 10px;">Тип: объединённая - гильдия объединена и едина / раздробленная - гильдия не объединена и не едина, у каждой части гильдии разные отношения
+        с другими гильдиями, свои правила и одно поселение раздробленной гильдии даже может напасть на другое поселение этой же гильдии.</p>
+      <p style="margin-top: 10px;">Область распространения: на планете Маран / Космическая (распространена по всей вселенной) / а также на других планетах могут быть другие случайные гильдии</p>
+      </div>
+      <p class="p2">
+      Нажмите на кнопку с названием гильдии и снизу страницы появится информация о ней.
+      </p>
+      <h3 class="p2">На планете Маран:</h3>
+      <div class="p2">
+        <button id="g1" type="button" class="btn" style="width: 140px; font-size: smaller; margin: 20px; color: white; background-color: blue;">Военные</button>
+        <button id="g2" type="button" class="btn" style="width: 150px; font-size: smaller; margin: 20px; color: white; background-color: orange">Повстанцы</button>
+        <button id="g3" type="button" class="btn" style="width: 140px; font-size: smaller; margin: 20px; color: white; background-color: purple">Безднолит</button>
+        <button id="g4" type="button" class="btn" style="width: 160px; font-size: smaller; margin: 20px; color: white; background-color: rgb(152, 224, 43)">Болотные ниндзя</button>
+        <button id="g5" type="button" class="btn" style="width: 160px; font-size: smaller; margin: 20px; color: white; background-color: rgb(216, 216, 19)">Свободные деревни</button>
+        <button id="g6" type="button" class="btn" style="width: 120px; font-size: smaller; margin: 20px; color: white; background-color: brown">Племя</button>
+        <button id="g7" type="button" class="btn" style="width: 170px; font-size: smaller; margin: 20px; color: white; background-color: black">Феодальства</button>
+        <button id="g8" type="button" class="btn" style="width: 120px; font-size: smaller; margin: 20px; color: white; background-color: grey">Пираты</button>
+      </div>
+      <h3 class="p2">Космические:</h3>
+      <div class="p2">
+        <button id="g9" type="button" class="btn" style="width: 200px; font-size: smaller; margin: 20px; color: white; background-color: cyan;">Галактическая империя</button>
+        <button id="g10" type="button" class="btn" style="width: 200px; font-size: smaller; margin: 20px; color: black; background-color: white">Галактическая республика</button>
+        <button id="g11" type="button" class="btn" style="width: 140px; font-size: smaller; margin: 20px; color: white; background-color: red">Магистры</button>
+        <button id="g12" type="button" class="btn" style="width: 140px; font-size: smaller; margin: 20px; color: white; background-color: rgb(209, 166, 147)">Улей</button>
+        <button id="g13" type="button" class="btn" style="width: 210px; font-size: smaller; margin: 20px; color: white; background-color: green">Инопланетяне</button>
+      </div>
+      <div>
+        <div id="tg1" class="p2">
+          <h4 style="color: blue;">Военные:</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Гильдия, находящаяся под синим флагом. У неё хорошо развиты технологии. Их цель - захват мира во имя блага. Хотят объединить мир и завершить войны. Дружат с безднолитом и робототехникой.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Цвет обозначения
+              </th>
+              <td>
+                Синий
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Объединённая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Отношения с другими гильдиями
+              </th>
+              <td>
+              Повстанцы: -100 <br>
+              Безднолит: +10 <br>
+              Болотные ниндзя: -25 <br>
+              Племя: -10 <br>
+              С остальными стандартные отношения (0)
+              </td>
+            </tr>
+            <tr>
+              <th>
+              Дружелюбность
+              </th>
+              <td>
+              Маленькая
+              </td>
+            </tr>
+            <tr>
+              <th>
+              Влияние
+              </th>
+              <td>
+              Большое
+              </td>
+            </tr>
+            <tr>
+              <th>
+              Любимый биом
+              </th>
+              <td>
+              Поле
+              </td>
+            </tr>
+            <tr>
+              <th>
+              Задания
+              </th>
+              <td>
+                -Рейд <br>
+                -Конвоирование <br>
+                -Найм <br>
+                -Инженерия <br>
+                -Починка <br>
+                -Обучение         
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tg2" class="p2">
+          <h4 style="color: orange;">Повстанцы:</h4>
+          <table>
+          <th>
+            Описание
+          </th>
+          <td>
+            Восставшие против военных армия, объединившаяся под оранжевым флагом против режима военных. Чтоб попасть в их ряды нужно доказать свою преданность повстанцам. Они скрываются в лесах и устраивают диверсии военным. Дружат с пауками и болотными ниндзя.
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Цвет обозначения
+          </th>
+          <td>
+            Оранжевый
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Тип
+          </th>
+          <td>
+            Объединённая
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Отношения с другими гильдиями
+          </th>
+          <td>
+            Военные: -100 <br>
+            Безднолит: -25 <br>
+            Болотные ниндзя: +50 <br>
+            Свободные деревни: +10 <br>
+            С остальными стандартные отношения (0)
+          </td>
+        </tr>
+        <tr>
+          <th>
+          Дружелюбность
+          </th>
+          <td>
+          Очень большая
+          </td>
+        </tr>
+        <tr>
+          <th>
+          Влияние
+          </th>
+          <td>
+          Среднее
+          </td>
+        </tr>
+        <tr>
+          <th>
+          Любимый биом
+          </th>
+          <td>
+          Лес
+          </td>
+        </tr>
+        <tr>
+          <th>
+          Задания
+          </th>
+          <td>
+            -Конвоирование <br>
+            -Пропаганда <br>
+            -Строительство <br>
+            -Информатор <br>  
+            -Взрыв объекта       
+          </td>
+        </tr>
+      </table>
+        </div>
+        <div id="tg3" class="p2">
+          <h4 style="color: purple;">Безднолит:</h4>
+          <table>
+          <tr>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия под властью огромного камня - Безднолита. Обладает огромной технологической мощью, большим влиянием на планете, новейшими технологиями. Дружит с технологиями и военными.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Фиолетовый
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Объединённая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Военные: +10 <br>
+              Повстанцы: -25 <br>
+              Ниндзя: -100 <br>
+              Свободные деревни: -10 <br>
+              Племя: -20 <br>
+              Космические гильдии: -10 <br>
+              С остальными стандартные отношения (0)
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Очень маленькая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Огромное
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Любимый биом
+            </th>
+            <td>
+            Пустырь
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Задания
+            </th>
+            <td>
+              -Осиное гнездо <br>
+              -Кладоискатель <br>
+              -Вербовка <br>
+              -Сбор <br>
+              -Конвоирование <br>
+              -Рейд              
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div id="tg4" class="p2">
+          <h4 style="color: rgb(152, 224, 43)">Болотные ниндзя:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Не попавшие под влияние Безднолита человечки, которые пытаются спасти своих собратьев от захвата безднолитом. Поселившиеся на болотах, они обладают большой ловкостью и скрытностью. Их союзниками являются повстанцы и непроходимые болота.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Зелёный
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Объединённая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Военные: -25 <br>
+              Повстанцы: +50 <br>
+              Безднолит: -100 <br>
+              С остальными стандартные отношения (0)
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            большая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Маленькое
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Любимый биом
+            </th>
+            <td>
+            Болото
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Задания
+            </th>
+            <td>
+              -Освобождение безднолитовцев <br>
+              -Кража роботов <br>
+              -Шпионаж <br>
+              -Разведка <br>
+              -Найм информаторов <br>
+              -Конструирование <br>
+              -Диверсия <br>
+              -Контробанда                   
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div id="tg5" class="p2">
+          <h4 style="color: rgb(216, 216, 19)">Свободные деревни:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия свободных деревень под общим жёлтым флагом. Они не едины, но они борются за общую цель - свободу отдельных деревень.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Жёлтый
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Раздробленная, но её части в альянсе
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Нет единых отношений из-за раздробленности, у каждой части свои.
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Средняя
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Среднее
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Любимый биом
+            </th>
+            <td>
+            Поле
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div id="tg6" class="p2">
+          <h4 style="color: brown;">Племя:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия, в которую относят все племена: как дикие, так и более развитые. Не прочь покушать жаренного у себя на костре человечка.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Коричневый
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Раздробленная
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Нет единых отношений из-за раздробленности, у каждой части свои.
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Маленькая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Маленькое
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Любимый биом
+            </th>
+            <td>
+            Лес
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div id="tg7" class="p2">
+          <h4 style="color: black;">Феодальства:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия поселений под властью феодалов. Их цель развить свои владения и властвовать во всём мире.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Чёрный
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Раздробленная
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Нет единых отношений из-за раздробленности, у каждого феодальства свои.
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+              У каждого феодальства части свои
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Маленькое
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Любимый биом
+            </th>
+            <td>
+            У каждого феодальства свой
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div id="tg8" class="p2">
+          <h4 style="color: grey;">Пираты:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+             Морские бандиты, плавающие в океанах Марана, грабящие торговые суда и прибрежные города.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Серый
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Раздробленная
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Нет единых отношений из-за раздробленности, у каждой части свои.
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Очень маленькая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Очень маленькое
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Любимый биом
+            </th>
+            <td>
+            Море
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div id="tg9" class="p2">
+          <h4 style="color: cyan;">Галактическая империя:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия, со сверх развитыми технологиями. Являются владельцами огромной части галактики и контролируют центр галактики. Заключили союз с галактическим императором. Любит действовать военным способом.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Голубой
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Объединённая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Галактическая республика: -10 <br>
+              Магистры: -100 <br>
+              Улей: -100 <br>
+              С остальными стандартные отношения (0)
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Очень маленькая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Невероятно гигантское
+            </td>
+          </tr>
+          <tr>
+        </table>
+        </div>
+        <div id="tg10" class="p2">
+          <h4 style="color: rgb(207, 183, 183)">Галактическая республика:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия, владеющая огромной частью галактики. Действует дипломатическим способом. Главой является Верховный совет. Положительные отношения ко всем обитателям космоса. Спасают Улей от вымирания.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Белый
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Объединённая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Галактическая империя: -10 <br>
+              Магистры: -100 <br>
+              Улей: +50 <br>
+              С остальными стандартные отношения (0)
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Большая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Невероятно гигантское
+            </td>
+          </tr>
+          <tr>
+        </table>
+        </div>
+        <div id="tg11" class="p2">
+          <h4 style="color: red;">Магистры:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Агрессивная гильдия, прилетевшая на Маран с другой планеты. Не могут жить в кислородной среде, поэтому используют специальные костюмы и особые строения - пилоны. Из-за брони неизвестно роботы это или живые существа, не признают остальную жизнь на планете и истребляет её. Считают, что гильдия Безднолит разумна среди остальных на Маране. Глава гильдии - сверхмощный ИИ, способный обрабатывать огромные объемы информации и принимать лучшие решения. Также их можно встретить на других планетах. Они больше всех хотят всё захватить и поработить.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Красный
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Объединённая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Безднолит: -50 <br>
+              С остальными стандартные отношения (-100)
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Невероятно маленькая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Очень гигантское
+            </td>
+          </tr>
+          <tr>
+        </table>
+        </div>
+        <div id="tg12" class="p2">
+          <h4 style="color: rgb(209, 166, 147);">Улей:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Довольно слаборазвитая гильдия, состоит из гуманоидов с продолговатой головой: либо вертикально (рабочие), горизонтально(солдаты), либо имеющие круглую голову с отростками (принцы). Ими управляет королева улья. Они находятся на многих планетах, хотя не имеют возможности летать по космосу, что является странным явлением их флаг телесного цвета.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Телесный
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Объединённая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Галактическая империя: -100 <br>
+              Галактическая республика: +50 <br>
+              Магистры: -100 <br>
+              С остальными стандартные отношения (0)
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+            Очень большая
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Влияние
+            </th>
+            <td>
+            Огромное
+            </td>
+          </tr>
+          <tr>
+        </table>
+        </div>
+        <div id="tg13" class="p2">
+          <h4 style="color: green;">Инопланетяне:</h4>
+          <table>
+            <th>
+              Описание
+            </th>
+            <td>
+              Гильдия обычных жителей космоса, можно встретить в разных местах галактики.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Цвет обозначения
+            </th>
+            <td>
+              Тёмно-зелёный
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Раздробленная
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Отношения с другими гильдиями
+            </th>
+            <td>
+              Нет единых отношений из-за раздробленности, у каждой части свои.
+            </td>
+          </tr>
+          <tr>
+            <th>
+            Дружелюбность
+            </th>
+            <td>
+              У каждых своя
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Влияние
+            </th>
+            <td>
+              Гигантское
+            </td>
+          </tr>
+        </table>
+        </div>
+      </div>
+
+      <h3 class="p3" id="M">Мобы:</h3>
+      <div class="p3">
+      <p>Нейтральные мобы: нападают при определённой ситуации.</p>
+      <p style="color: red;">Агрессивные мобы: всегда нападают.</p>
+      <p style="color: green;">Мирные мобы: почти никогда не нападают.</p>
+      <p style="color: purple;">Минибоссы: агрессивные очень сильные существа в одном или нескольких экземлярах на мир.</p>
+      <p style="color: orange;">Боссы: агрессивные сильнейшие существа в единичном экземпляре на мир.</p>
+      </div>
+      <p class="p3">
+        Нажмите на кнопку с названием моба и снизу страницы появится информация о нём.
+      </p>
+      <h4 class="p3">Нейтральные:</h4>
+      <div class="p3">
+        <button id="m9" type="button" class="btn btn-primary" style="width: 150px; font-size: smaller; margin: 10px;">Человечек</button>
+        <button id="m1" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Кельм</button>
+        <button id="m2" type="button" class="btn btn-primary" style="width: 190px; font-size: smaller; margin: 10px;">Целементрал</button>
+        <button id="m3" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Сарлак</button>
+        <button id="m4" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Робот МК1</button>
+        <button id="m5" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Робот МК2</button>
+        <button id="m6" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Танк</button>
+        <button id="m21" type="button" class="btn btn-primary" style="width: 140px; font-size: smaller; margin: 10px;">Робопаук</button>
+        <button id="m7" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Тесла</button>
+        <button id="m8" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Птица</button>
+        <button id="m10" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Рыба-меч</button>
+        <button id="m11" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Чор</button>
+      </div>
+      <h4 class="p3" style="color: red;">Агрессивные:</h4>
+      <div class="p3">
+        <button id="m12" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Паук</button>
+        <button id="m13" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Таран</button>
+        <button id="m14" type="button" class="btn btn-primary" style="width: 210px; font-size: smaller; margin: 10px;">Инверсионный таран</button>
+        <button id="m15" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Зомби</button>
+        <button id="m16" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Черь</button>
+        <button id="m17" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Кусака</button>
+        <button id="m18" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Ловушка</button>
+        <button id="m19" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Змея</button>
+        <button id="m43" type="button" class="btn btn-primary" style="width: 170px; font-size: smaller; margin: 10px;">Дарт человечек</button>
+        <button id="m22" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Призрак</button>
+        <button id="m23" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Большой призрак</button>
+        <button id="m46" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Требнум</button>
+        <button id="m24" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Акула</button>
+        <button id="m25" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Ронан</button>
+        <button id="m45" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Хорь</button>
+      </div>
+      <h4 class="p3" style="color: green;">Мирные:</h4>
+      <div class="p3">
+        <button id="m26" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Бранкор</button>
+        <button id="m27" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Кибо</button>
+        <button id="m28" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Пилик</button>
+        <button id="m29" type="button" class="btn btn-primary" style="width: 150px; font-size: smaller; margin: 10px;">Динозавр</button>
+        <button id="m30" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Рыба</button>
+        <button id="m31" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Жогер</button>
+        <button id="m42" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Тук</button>
+        <button id="m20" type="button" class="btn btn-primary" style="width: 160px; font-size: smaller; margin: 10px;">Лайт человечек</button>
+      </div>
+      <h4 class="p3" style="color: purple;">Минибоссы:</h4>
+      <div class="p3">
+        <button id="m32" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Теневая ладья</button>
+        <button id="m33" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Мега зомби</button>
+        <button id="m34" type="button" class="btn btn-primary" style="width: 160px; font-size: smaller; margin: 10px;">Левиафан</button>
+        <button id="m35" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Гигамех</button>
+        <button id="m36" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Кракен</button>
+        <button id="m37" type="button" class="btn btn-primary" style="width: 160px; font-size: smaller; margin: 10px;">Мегалодон</button>
+        <button id="m38" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Чувырла</button>
+      </div>
+      <h4 class="p3" style="color: orange;">Боссы:</h4>
+      <div class="p3">
+        <button id="m39" type="button" class="btn btn-primary" style="width: 160px; font-size: smaller; margin: 10px;">KPbIM2017</button>
+        <button id="m40" type="button" class="btn btn-primary" style="width: 180px; font-size: smaller; margin: 10px;">Космический император</button>
+        <button id="m41" type="button" class="btn btn-primary" style="width: 125px; font-size: smaller; margin: 10px;">Чарли</button>
+      </div>
+      <div id="tm9">
+        <h4>Человечек</h4>
+        <table>
+          <tr>
+            <th>
+              Описание
+            </th>
+            <td>
+              Главный разумный персонаж, за которого играет игрок по стандарту. Аналог человека.
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Тип
+            </th>
+            <td>
+              Нейтральный
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Здоровье
+            </th>
+            <td>
+              100
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Урон
+            </th>
+            <td>
+              5 (руками)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Скорость
+            </th>
+            <td>
+              Средняя
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Частота появления
+            </th>
+            <td>
+              Частая
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Когда появляется
+            </th>
+            <td>
+              Днём
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Особые способности
+            </th>
+            <td>
+              -Разум <br>
+              -Держание вещей в руках <br>
+              -Добывание ресусов <br>
+              -Строительство <br>
+              -Надевание одежды <br>
+            </td>
+          </tr>
+        </table>
+        <img src="img/man.jpg" alt="Человечек" title="Человечек">
+      </div>
+      <div class="p3">
+        <div id="tm1">
+          <h4>Кельм</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Небольшое животное, сильно ничего не значущее.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                75
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                10
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Частая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Днём
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+          </table>
+          <img src="img/kelm.jpg" alt="Кельм" title="Кельм">
+        </div>
+        <div id="tm2">
+          <h4>Целементрал</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Большое животное, сильно ничего не значущее.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                120
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                20
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Ниже среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Выше среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Днём
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+          </table>
+          <img src="img/celementral.jpg" alt="Целементрал" title="Целементрал">
+        </div>
+        <div id="tm3">
+          <h4>Сарлак</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+              Лежит под песком и когда чувствует вибрации съедает жертву. Если долго нет добычи, то  под землёй перебирается в другое место. Можно убить проткнув его середину или скормив яд.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                300
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100 (или съедает)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Нет (средняя когда переходит на новое место)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В любое время суток под песком
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+          </table>
+          <img src="img/sarlak.jpg" alt="Сарлак" title="Сарлак">
+        </div>
+        <div id="tm4">
+          <h4>Робот МК1</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+              Робот военных и безднолита (но безднолит его использует намного реже), создаваемый в военных целях. Умный, обладает электрический силой и ранцем. Он, кстати, живой, так что всё может делать сам, но в него можно сесть и управлять самому.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                300
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                40
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Взависимости от того, как много их производят
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда его создадут
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Можно сесть в него и управлять <br>
+                Удар током <br>
+                Подлетает
+              </td>
+            </tr>
+          </table>
+          <img src="img/MK1.jpg" alt="Робот МК1" title="Робот МК1">
+        </div>
+        <div id="tm5">
+          <h4>Робот МК2</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+              Робот военных и безднолита (но безднолит его использует намного реже), создаваемый в военных целях. Умный, обладает огромным весом и ранцем. Но из-за большого веса с помощью ранца может только планировать над землёй. Он, кстати, живой, так что всё может делать сам, но в него можно сесть и управлять самому.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                500
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Ниже среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Взависимости от того, как много их производят
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда его создадут
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Можно сесть в него и управлять <br>
+                Таранит <br>
+                Прланирование над землёй
+              </td>
+            </tr>
+          </table>
+          <img src="img/MK2.jpg" alt="Робот МК2" title="Робот МК1=2">
+        </div>
+        <div id="tm6">
+          <h4>Танк</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Военное устройство военных и безднолита (но безднолит его использует намного реже), аналог танка. Может стрелять зарядами, переносить тяжёный вес. Многие характеристики зависят от модели. Он, кстати, живой, так что всё может делать сам, но в него можно сесть и управлять самому.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                Взависимости от модели
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Взависимости от модели
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Взависимости от модели (обычно медленная)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Взависимости от того, как много их производят
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда его создадут
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Можно сесть в него и управлять <br>
+                Стрельба бомбами
+              </td>
+            </tr>
+          </table>
+          <img src="img/tank.jpg" alt="Танк" title="Танк">
+        </div>
+        <div id="tm21">
+          <h4>Робопаук</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Робот военных и безднолита (но безднолит его использует намного реже). Они решили сделать свой аналог паука, который будет более сильным и будет за них, а не за повстанцем. Он, кстати, живой, но управлять самому им нельзя.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                200
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Когда его создадут
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда его создадут
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Режущий урон <br>
+                Напрыгивание на врага
+              </td>
+            </tr>
+          </table>
+          <img src="img/robospider.jpg" alt="Робопаук" title="Робопаук">
+        </div>
+        <div id="tm7">
+          <h4>Тесла</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Военное устройство военных и безднолита (но безднолит её использует намного реже), обладающее большой электроэнергией. Долгая перезарядка, зато очень мощный электровыстрел получается но большую площадь. Она, кстати, живая, так что всё может делать сама, но в неё можно сесть и управлять самому.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                200
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Взависимости от того, как много их производят
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда её создадут
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Можно сесть в него и управлять <br>
+                Электрический удар
+              </td>
+            </tr>
+          </table>
+          <img src="img/tesla.jpg" alt="Тесла" title="Тесла">
+        </div>
+        <div id="tm8">
+          <h4>Птица</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Аналог птицы, но только намного больше и опаснее.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                15
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Срендяя, обычно около гнёзд птиц на горах
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Днём
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Полёт
+              </td>
+            </tr>
+          </table>
+          <img src="img/bird.jpg" alt="Птица" title="Птица">
+        </div>
+        <div id="tm10">
+          <h4>Рыба-меч</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+               Опасная рыба, сильно протыкающая противников, создавая большие кровотечения. Из неё можно сделать саблю.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                75
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Очень быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В любое время суток в воде
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Дыхание под водой
+              </td>
+            </tr>
+          </table>
+        </div>
+        </div>
+        <div id="tm11">
+          <h4>Чор</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+               Обитает на пляже, любит песок. Добывает ракушки и камушки и кушает их. С ним дружат чорные ниндзя.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                80
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                25
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В любое время суток на пляже
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm12">
+          <h4>Паук</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Стандартный агрессивный моб. Это огромный, страшный и быстрый паук. Боится света.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                120
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                30 (или съедает)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень часто
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Прыжок на врага
+              </td>
+            </tr>
+          </table>
+          <img src="img/spider.jpg" alt="Паук" title="Паук">
+        </div>
+        <div id="tm13">
+          <h4>Таран</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Сильный моб, который крепкий и мощный как таран и ему на всё всё равно.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                10 000
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                250
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Редко
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда угодно
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Ускорение перед ударом <br>
+                Удар напрямую <br>
+                Удар сбоку <br>
+                Напрыгивабщий удар сверху
+              </td>
+            </tr>
+          </table>
+          <img src="img/taran.jpg" alt="Таран" title="Таран">
+        </div>
+        <div id="tm14">
+          <h4>Инверсионный таран</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Таким становится таран, если перевернётся. Теперь он обладает новой спосоностью
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                10 000
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                400
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда угодно
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Ускорение перед ударом <br>
+                Удар напрямую <br>
+                Удар сбоку <br>
+                Напрыгивабщий удар сверху <br>
+                Притягивание противника
+              </td>
+            </tr>
+          </table>
+          <img src="img/invtaran.jpg" alt="Иверсионный таран" title="Иверсионный таран">
+        </div>
+        <div id="tm15">
+          <h4>Зомби</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Аналог зомби. Может заражать и боится света.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                20
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Заражение
+              </td>
+            </tr>
+          </table>
+          <img src="img/zombie.jpg" alt="Зомби" title="Зомби">
+        </div>
+        <div id="tm16">
+          <h4>Черь</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Очень крупный моб, живёт под землёй, в основном в пустынях. Когда хочет есть начинает чувствовать колебания земли и находить цель и выпрыгивает из земли, съедая её. Ест всё: как роботов, так и животных. Может достигать гигатских размеров в длинну. Невозможно отравить, очень тяжело убить.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                600
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                500 (или съедает)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Обычно в пустынях под землёй
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Быстрое выкапывание из земли с прыжком и быстрое закапывание
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm17">
+          <h4>Кусака</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Большое растение, растущее в джунглях или из семян. Может схватить и съесть человечка, а также облить кислотой.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                200
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100 (или съедает)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Нет (растёт на месте)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В джунглях или из семян
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Обливание кислотой
+              </td>
+            </tr>
+          </table>
+          <img src="img/kusaka.jpg" alt="Кусака" title="Кусака">
+        </div>
+        <div id="tm18">
+          <h4>Ловушка</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Ловушка, сделанная каким-то человечком. Если на неё наступить, то она зажмёт ногу, перевернёт и снесёт много урона.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+               20 
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Должна быть построена человечком
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда её сделал человечек
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                удержание и переворачивание жертвы
+              </td>
+            </tr>
+          </table>
+          <img src="img/trap.jpg" alt="Ловушка" title="Ловушка">
+        </div>
+        <div id="tm19">
+          <h4>Змея</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Аналог змеи. Ползает по земле и может укусить.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                5
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                10
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда угодно
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Некоторые могут отравлять жертву ядом
+              </td>
+            </tr>
+          </table>
+          <img src="img/snake.jpg" alt="Змея" title="Змея">
+        </div>
+        <div id="tm20">
+          <h4>Дарт человечек</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Его приносит на разные планеты корабль Галактической империи. У него много способностей и есть сильное стреляющее оружие. Всех убивает и ненавидит Лайт человечка.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                120
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Руками: 25
+                Оружием: может быть разное, обычно около 75
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда его приносит корабль Галактической империи
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Притягивание <br>
+                Трусить врага <br>
+                Протыкание врага его мечом <br>
+                Плавное падение
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm22">
+          <h4>Призрак</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Аналог призрака. Пролитает через стены и пугает. Появляются при условии, если человечек давно не спал (чем больше не спал, тем больше призраков), либо в заброшенных зданиях или поселениях.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                25
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Ниже среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Взависимости от обстоятельств
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью, когда человечек давно не спал или в заброшенных зданиях
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Парение над землёй <br>
+                Уменьшение рассудка врага <br>
+                Сложно попасть <br>
+                Парвение над землёй
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm23">
+          <h4>Большой призрак</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Улучшенная версия призрака. Появляется при условии, если человечек очень давно не спал, или же в больших заброшенных поселениях.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+               Агрессивный 
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                150
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Взависимости от обстоятельств
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью, когда человечек очень давно не спал или в заброшенных поселениях
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Парение над землёй <br>
+                Сильное уменьшение рассудка врага<br>
+                Сложно попасть <br>
+                Исцеление других призраков
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm46">
+          <h4>Требнум</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Притворяется человечком, а потом, когда голодный, превращается в паука и съедает жертву.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Руками когда человечек: 5
+                Когда паук: 30 (или съедает)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Когда человечек: средняя
+                Когда паук: быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Ниже среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Днём
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                -Притворяется человечком <br>
+                -Превращается в паука и обратно <br>
+              </td>
+            </tr>
+          </table>
+          <img src="img/trebnum.jpg" alt="Требнум" title="Требнум">
+        </div>
+        <div id="tm24">
+          <h4>Акула</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Аналог акулы. Плавает и кусается.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                150
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100 (либо проглатывает)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В воде
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Дыхание под водой <br>
+                Проглатыание врага <br>
+                Выныривающий удар
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm25">
+          <h4>Ронан</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+               Нападает на чоров, главный враг чорных ниндзя.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Нейтральный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                150
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В любое время суток, на или около пляжа.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+          </table>
+        </div>
+        </div>
+        <div id="tm45">
+          <h4>Хорь</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Притворяется туком, обычно появляется рядом с туком. Но вместо тука он своим стучанием даёт дебафы и нападает на человечка.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Агрессивный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Обычно около тука
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Притворяется туком <br>
+                Стучит по полу, играя музыку, которая даёт дебафы <br>
+                Резко нападает
+              </td>
+            </tr>
+          </table>
+          <img src="img/hor.jpg" alt="Хорь" title="Хорь">
+        </div>
+        <div id="tm26">
+          <h4>Бранкор</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Животное, которое дружит с бранкосами. На нём можно ездить и он перевозит грузы.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                50
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                15
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Днём, у бранкосов
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Лёгкое приручение <br>
+                Верховая езда <br>
+              </td>
+            </tr>
+          </table>
+          <img src="img/brankor.jpg" alt="Бранкор" title="Бранкор">
+        </div>
+        <div id="tm27">
+          <h4>Кибо</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Кибо - лучший друг человечка. Он верен своему хозяину и всегда помогает ему. Но он плохо подходит для сражений или езды на нём, а скорее для бытовых дел.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                10
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Ниже среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда угодно
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Можно приручить <br>
+                Верен своему хозяину и помогает ему <br>
+                Переносить предметы
+              </td>
+            </tr>
+          </table>
+          <img src="img/kibo.jpg" alt="Кибо" title="Кибо">
+        </div>
+        <div id="tm28">
+          <h4>Пилик</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Пахает поля у свободных деревень.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                150
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                20
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Ниже среднего
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                У свободный деревень
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Пахает поле
+              </td>
+            </tr>
+          </table>
+          <img src="img/.jpg" alt=" " title=" ">
+        </div>
+        <div id="tm29">
+          <h4>Динозавр</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Полувымерший вид мобов, аналог динозавра, который в прошлых версиях игры встречался чаще.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                200
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                20
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень редко
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Днём
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Нет
+              </td>
+            </tr>
+          </table>
+          <img src="img/dinasour.jpg" alt="Динозавр" title="Динозавр">
+        </div>
+        <div id="tm30">
+          <h4>Рыба</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Аналог рыбы. Плавает и булькает себе под нос.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                20
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                0, у некоторых от 1-10
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Частое
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В воде
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Дыхание под водой
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm31">
+          <h4>Жогер</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Живёт у пляжа, питается камушками и ракушками и превращает их в минералы. Выкидывает рыбу с суши в море
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                75
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                На пляже или около него
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Переделывает из камушков и ракушек в минералы <br>
+                Выкидывает рыбу с суши на море <br>
+                Первая атака по нему не проходит
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm42">
+          <h4>Тук</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Редкое моб, который стучит по полу, играя музыку, которая даёт бафы. Является очень ценным мобом, которые все человечки хотят его приручить и забрать к себе, очень дорогой.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                80
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                0
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Обычно в пещере
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Стучит по полу, играя музыку, которая даёт бафы
+              </td>
+            </tr>
+          </table>
+          <img src="img/tuk.jpg" alt="Тук" title="Тук">
+        </div>
+        <div id="tm44">
+          <h4>Лайт человечек</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Его приносит на разные планеты корабль Галактической республики. У него много способностей и есть сильное стреляющее оружие. Добрый, помогает другим, а особенно улью и ненавидит Дарт человечкка.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Мирный
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                120
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Руками: 20
+                Оружием: 75
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Быстрая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Очень редкая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Когда его приносит космический корабль Галактической республики
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Отталкивание <br>
+                Исцеление себя и других
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm32">
+          <h4>Теневая ладья</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Появляется в данже теневой ладьи, который один на весь мир. Есть много видов ударов. По началу даже не видно, что она теневая, так как на неё надета крепкая броня.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                500 (но сильная броня)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Боковым: 100
+                Таран: 500
+                Прыжок на врага: 250
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Большая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Один экземляр на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В даже Теневой ладьи.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Боковой удар <br>
+                Таран <br>
+                Прыжок на врага <br>
+                Сложно пробить броню
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm33">
+          <h4>Мега зомби</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Усиленная версия зомби. Имеет 4 жизни и различные атаки.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                200 (у каждой из 4 жизней)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                По земле: 100
+                Удар волной: 100
+                Толчёк: 75 (+враг подлетает и падает, получая дополнительный урон)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Несколько экземляров на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью с маленьким шансом
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Заражение
+              </td>
+            </tr>
+          </table>
+          <img src="img/mega zombie.jpg" alt="Мега зомби" title="Мега зомби">
+        </div>
+        <div id="tm34">
+          <h4>Левиафан</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Чудовище, сидящее на дне и топящее корабли.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                1000
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                250
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Медленная
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Несколько экземляров на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В воде на большой глубине
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Дыхание под водой <br>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm35">
+          <h4>Гигамех</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                С объединением усилий, военные и безднолит создали сильнейшего робота, созданный в военных целях. Пока что он тольок один, но с развитием технологий могут появится новые экземляры. У него много различных способностей. Стреляет лазером с быстрой перезарядкой. Он, кстати, живой, так что всё может делать сам, но в него можно сесть и управлять самому.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                700
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Один экземлпяр на мир (пока что)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                У военных или безднолита в крупнейших городах или на ещё каком-либо важном событии
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Можно сесть в него и управлять <br>
+                Полёт <br>
+                Может притянуть до 4 мобов которые будут висеть у него
+              </td>
+            </tr>
+          </table>
+          <img src="img/gigameh.jpg" alt="Гигамех" title="Гигамех">
+        </div>
+        <div id="tm36">
+          <h4>Кракен</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Страшное морское чудовище, аналог огромного кракена. Нельзя убить, а только победить его щупальца. Топит корабли.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                200 (у каждой щупальцы)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                50 (щупальца)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Несколько экземпляров на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В открытом океане
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Многочисленные щупальца
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm37">
+          <h4>Мегалодон</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Страшное морское чудовище. Гигантская акула.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                750
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                200 (или проглатывание)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Очень большая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Несколько экземпляров на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В открытом океане
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Выныривающий удар <br>
+                Проглатывание жертвы <br>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm38">
+          <h4>Чувырла</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Очень страшное чудовище, появляющееся около данжа чуврлы. Любит пугать и играться с жертвой. Очень быстрая регенерация.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                500 (очень быстрая регенерация)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                1000 (но любит играться с жертвой)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Очень высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Несколько экземляров на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью, около данжа "Дом чувырлы"
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Напрыгивание на врага <br>
+                Сильное уменьшение рассудка врага <br>
+                Играется с жертвой <br>
+                Очень быстрая регенерация
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm39">
+          <h4>KPbIM2017</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Бог вселенной. Появится после убийства Космического императора концовках.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Минибосс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                100 000 (в определённом варианте концовки)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Различные атаки (в определённом варианте концовки)
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Средняя
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Один экземляр на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                После убийства Космического императора на концовках
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Бог вселенной <br>
+                Ставит любых мобов
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm40">
+          <h4>Космический император</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Гигантское страшное существо. Находится в центре вселенной. Там очень темно, так что узнать где он можно только по радару, который он регулярно глушит. Имеет разнообразные ближнии и дальнии атаки и разные стадии. С ним заключила союз Галактическая империя. После победы над ним будет какая-то концовка.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Босс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                30 000
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                Разные атаки
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Очень высокая
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Один экземляр на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                В центре галактики
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Глушение радара <br>
+                Всеразличные атаки и стадии
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div id="tm41">
+          <h4>Чарли</h4>
+          <table>
+            <tr>
+              <th>
+                Описание
+              </th>
+              <td>
+                Появляется в полной темноте и обычно с одного удара уничтожает человечка. Но очень боится света, который наносит ему огромный урон. Умеет превращаться в теневых версий мобов, и может не в одного, а в огромное количество, которые ходят по миру и следят за человечками. Но победить его так просто ночью нельзя, если что он просто уйдёт. Нужно как-то попасть в теневой мир и найти там замок Чарли, где и предоставляется возможность его победить раз и навсегда. Тогда ночью станет спокойнее.
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Тип
+              </th>
+              <td>
+                Босс
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Здоровье
+              </th>
+              <td>
+                10 000 
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Урон
+              </th>
+              <td>
+                100-1000
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Скорость
+              </th>
+              <td>
+                Моментальное передвижение в темноте
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Частота появления
+              </th>
+              <td>
+                Один экземляр на мир
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Когда появляется
+              </th>
+              <td>
+                Ночью в полной темноте или в дажне "Замок Чарли" в теневом мире
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Особые способности
+              </th>
+              <td>
+                Тушение костра пока человечек не видит <br>
+                Превращение в огромное количество теневых мобов <br>
+              </td>
+            </tr>
+          </table>
+          <img src="img/сharli.jpg" alt="Чарли" title="Чарли">
+        </div>
+      </div>
+      
+      <div class="p4" id="M">
+      <h3>Достижения:</h3>
+      <p>
+        Вы можете выполнять достижения в стандартном выживании и получать рыбки! 
+      </p>
+      <p><div>Каждое лёгкое достижение приносит 1 рыбку</div><div class="orange">Каждое среднее достижение приносит 5 рыбок</div><div class="red">Каждое сложное достижение приносит 15 рыбок</div></p>
+      </div> 
+      <div class="p4">
+        <button id="easy" type="button" class="btn btn-primary" style="width: 150px; font-size: smaller;">Лёгкие</button>
+        <button id="medium" type="button" class="btn btn-primary" style="width: 150px; font-size: smaller; margin-left: 30px;">Средние</button>
+        <button id="hard" type="button" class="btn btn-primary" style="width: 150px; font-size: smaller; margin-left: 30px;">Сложные</button>
+      </div>
+      <div class="p4">
+        <h3 class="contEasy" style="color: green;">Лёгкие достижения:</h3>
+          <ol class="contEasy">
+            <li>Новичок - пройти 1 уровень</li>
+            <li>Гений - пройти 50 уровней</li>
+            <li>Тем больнее падать - скинуть живого паука с большой высоты</li>
+            <li>Изобретатель - сделать 20 предметов</li>
+            <li>Геноцид - убить 20 пауков</li>
+            <li>Чисто сделано - помыть одежду в режиме выживания</li>
+            <li>Рыцарь в доспехах - спасти жителя свободной деревни от беды</li>
+            <li>Предатель - украсть ресурсы у спасшего тебя человечка</li>
+            <li>Лучший друг человечка - приручить или купите паука в выживании</li>
+            <li>Я вижу свет в конце тоннеля - умереть 5 раз</li>
+            <li>Да будет вода! - построить колодец</li>
+            <li>Второй KPbIM2017 - играть в хомбресилло 7 дней</li>
+            <li>Вот это взрыв! - скинуть бомбу с самолета </li>
+            <li>И кто теперь бандит? - убейте бандита</li>
+            <li>Герой деревень - захватить лагерь бандитов</li>
+            <li>Королевская кровь- получить корону феодала</li>
+            <li>Неряха - потерять своё государство</li>
+            <li>Бой с тенью - убить любого теневого моба</li>
+            <li>Зов предков - убить призрака</li>
+            <li>Фермер - собрать урожай со своих ферм в выживании</li>
+            <li>Истинная цель - собрать деньги со своей колонии на другой планете</li>
+            <li>Мордобой - предотвратить бунт колонии</li>
+            <li>Бездонная яма - купить склад в колония</li>
+            <li>Герой - защитить свободную деревню от набега</li>
+            <li>Оно само!? - построить стыковочную шахту</li>
+            <li>Мы пришли помочь - найти еще не развившихся существ на другой планете и поставить монолит для ускорения их развития</li>
+            <li>Лучшие друзья - подружится с любыми инопланетянами</li>
+            <li>Заклятые враги - начать войну с любыми инопланетянами</li>
+            <li>5 минут полёт нормальный - пройти 1 уровень (космос)</li>
+            <li>Алкаш - выпить 10 кружек пива одним персонажем</li>
+            <li>Дежавю - снова изучить каменную кирку упав на другую планету</li>
+            <li>Так вот какой этот ваш дикий запад - найти пустыню</li>
+            <li>Мореплаватель - построить любой корабль</li>
+            <li>Юнга - присоединиться к любым из пиратов </li>
+            <li>Морская крыса - ограбить корабль</li>
+            <li>Преступник №1 - ограбить банк</li>
+            <li>Гроза законников - потопить корабль законников</li>
+            <li>Крупная рыбка - поймать рыбу с корабля</li>
+            <li>Кровавый Юнга - вступить в Красные сабли </li>
+            <li>Мегаполис - найти город</li>
+            <li>На побегушках - выполнить три поручения гильдий</li>
+            <li>круговорот мэров в хомбресилло - стать новым мэром взамен старому</li>
+            <li>Контрабандист - помочь “темному” человечку доставить посылку</li>
+            <li>Летучий змей - случайно кинуть змею из посылки “темного” человечка</li>
+            <li>На стороне закона - распаковать посылку и сдать “темного” человечка в руки закона</li>
+            <li>Ты такой же как они! - не помогать человечку при побеге из тюрьмы</li>
+            <li>Дилетант - при попытке диверсии быть пойманным</li>
+            <li>Это можно пить? - фильтровать воду</li>
+            <li>Здесь будет много разных животин - построить стойло в вашей деревне</li>
+            <li>Неоправданная цена - выставить цену в 10 кат в стойле</li>
+            <li>Временный дом - переночевать в отеле или арендовать дом</li>
+            <li>Бессонник - не спать 5 дней</li>
+            <li>Регулятор цен - открыть отель в своём поселении</li>
+            <li>Неминуемый страх - встретить чувырлу</li>
+            <li>Недостаток веры -  почувствовать силу дарт человечка </li>
+            <li>Это могло быть валютой! - выловить 10 рыбок в реке</li>
+            <li>Справедливость - пройти проверку при входе в город</li>
+            <li>Несправедливость - не пройти проверку при входе в город</li>
+            <li>Садоводства мастер  - выращивать 4 дерева одновременно</li>
+            <li>Бомжатник - иметь одновременно более 5 бомжей в своём поселении</li>
+            <li>Раб - стать рабом</li>
+            <li>Рабовладельчество - иметь раба</li>
+            <li>Порча - отравить кого-либо гнилой едой</li>
+            <li>Искусственное счастье - создать картину</li>
+            <li>Карто-граф - будучи владельцем крупного поселения нарисовать карту диверсии</li>
+            <li>Картограф - нарисовать карту</li>
+            <li>Инженер - нарисовать свой чертеж</li>
+            <li>Мои Налоги!- забрать налоги у чужого поселения</li>
+            <li>Метеорит - найти метеорит на “родине”</li>
+            <li>Инвалидность - получить перманентный дебаф</li>
+            <li>Буль-буль? - Утонуть в маленьком ручье</li>
+            <li>Радость - счастье персонажа +100</li>
+            <li>Человечек шашлычёк - попасть в плен к воинственному племени</li>
+            <li>Подстрекатель - купить рейд противника за каты</li>
+            <li>Наниматель - нанять наёмников</li>
+            <li>Наёмник - наняться на дело</li>
+            <li>Лучшая Команда - создать команду состоящую минимум из двух человечков</li>
+            <li>Военнопеменник - убить главу другого племени при обороне союзного племени</li>
+            <li>Ненадежные конструкции - войти в базу врага через “слабую” стену</li>
+            <li>Плохой командующий - потерять всех людей поселения при нападении</li>
+            <li>Ох зря я туда полез - полезть в подземелье</li>
+            <li>Вот кто ты такой - увидеть чарли</li>
+            <li>Тараааан! - увидеть тарана</li>
+            <li>Вековая память - построить статую</li>
+            <li>Лентяи разрабы - найти не продуманность в игре</li>
+            <li>Это аэростат? -  Посмотреть на птицу в полете</li>
+            <li>Многофункциональность - научится владеть любым оружием хотя бы на средний уровень</li>
+            <li>Гарант - заключите мир между племенами</li>
+            <li>Первая ночь - пережить  ночь</li>
+            <li>Здесь я большее смогу - скрафтить верстак</li>
+            <li>Тепло и переплавка - скрафтить печь</li>
+            <li>Чувствуй себя как дома, путник - прийти переночевать к человечку</li>
+            <li>Каменный век настал! - скрафтить каменную кирку</li>
+            <li>Кирка и без дела ржавеет - скрафтить железную кирку</li>
+            <li>Сколько это может стоить? - найти предмет, цену которого вы не знаете</li>
+            <li>Я-лекарство - вылечить десять человечков за одного персонажа</li>
+            <li>Колодец, ноо... лучше! - построить “водокачку”</li>
+            <li>ЪУЪ?  - поговорить с племенем</li>
+            <li>Да? - поговорить с племенем и добиться положительного результата </li>
+            <li>Нет! - добиться того чтобы племя напало на вас из за разговора с ними</li>
+            <li>Выгодный обмен - обменять у племени их драгоценности на что либо дешевле</li>
+            <li>Многообразие - поиграть в каждый из режимов и сценариев в хомбресило</li>
+            <li>Больной - пройти осмотр в больнице 10 раз</li>
+            <li>Маньяк?! - 50 раз в одной игре проверить  здание полиции в одном городе</li>
+            <li>Казуал - пройти игру на сложности “Easy”</li>
+            <li>Странный мир - зайти в зеркальный мир</li>
+            <li>Жертва амбиций - добиться смерти раба от переработки</li>
+            <li>Экономия - не кормить раба</li>
+            <li>Черное золото - найти нефть</li>
+            <li>Полезная сладость - найти мёд</li>
+            <li>Ровные брёвна - создать доски</li>
+            <li>Рыбёшку - найти рыбу под водой</li>
+            <li>Прирожденный убийца - нанести критический урон с помощью кинжала убийцы</li>
+            <li>Лёгкий шаг - не тонуть в болоте с помощью ботинок болотника</li>
+          </ol>
+      </div>
+      <div class="p4">
+        <h3 class="contMedium" style="color: rgb(228, 154, 17);">Средние достижения:</h3>
+          <ol class="contMedium">
+            <li>Мегамозг - пройти 100 уровней хомбресилло</li>
+            <li>Стелс мастер - удачно спрятаться 50 раз</li>
+            <li>Неизведанная Даль - перейти море</li>
+            <li>Знания-сила - сделать или купить книгу третьего уровня</li>
+            <li>Вы мне не ровня - захватить свободную деревню</li>
+            <li>Железный человек - сделать полную железную броню</li>
+            <li>Вот это железяка - убить Гигамеха</li>
+            <li>Высшее существо - отправится в космос</li>
+            <li>Обитель - полностью захватить основную планету</li>
+            <li>Это он? - залететь в центр вселенной</li>
+            <li>Мастер полётов - пройти 100 уровней (космос)</li>
+            <li>Враг народа - подружится с галактической империей на отношения +100</li>
+            <li>Человечек разумный - упав на другую планету, подружится с одним из племён и найти одного врага</li>
+            <li>Охотник за головами - принести человечка с наградой за голову шерифу</li>
+            <li>Матёрый пират - убить одного из морских боссов</li>
+            <li>Капитан - создать команду пиратов</li>
+            <li>Морской охотник - потопить корабль пиратов и сдать капитана законником</li>
+            <li>Странная битва - поймать рыбу-меч </li>
+            <li>Непотопляемый - создать "Галеон"</li>
+            <li>Лучший из морей - захватить или уничтожить Красных саблей</li>
+            <li>Безднолитовец - уничтожить Болотных ниндзя</li>
+            <li>Повстанец - уничтожить Военных</li>
+            <li>Военный - уничтожить Повстанцев</li>
+            <li>Болотный ниндзя - уничтожить Безднолит</li>
+            <li>Антидеревенец - уничтожить Свободные деревни</li>
+            <li>Законник - уничтожить пиратов</li>
+            <li>Штурмовик империи - уничтожить улей</li>
+            <li>Сладкая месть - помочь отомстить кому-либо</li>
+            <li>Диверсант - устроить диверсию </li>
+            <li>Великая мощь - купить “мастера” паука</li>
+            <li>Оно живое? - встретить Робопаука </li>
+            <li>Оно живое! - получить урон от Робопаука</li>
+            <li>Кровавая смерть - увидеть кровавую луну</li>
+            <li>Извинения приняты - поднять отношения на 100 у любой гильдии</li>
+            <li>Твои знания тебя погубят! - прочесть “призывник”</li>
+            <li>Ад - получить 75+ дебафов</li>
+            <li>Рай - поучить 75+ бафов</li>
+            <li>Неплодородные земли - не вырастить ни одного растения за год в поселении</li>
+            <li>Антивеганство - не съесть ни одного фрукта/овоща/ягоды за год</li>
+            <li>Мда… - погибнуть 10 раз за минуту</li>
+            <li>Любитель преодевашек - с помощью одежды противников обмануть врагов 5 раз подряд</li>
+            <li>Чё, линсик? - найти “Линсик”</li>
+            <li>Плоть слаба - сделать два протеза</li>
+            <li>Невероятное везение - два раза подряд выбить максимально возможный шанс</li>
+            <li>Великая неудача - 2 раза подряд выбить минимально возможный шанс</li>
+            <li>Невозможное невозможно - не смочь прочесть невозможный том книги</li>
+            <li>Сходство - приложить амулет для открытия подземелья</li>
+            <li>Агрессивные нападки - войти через главный вход при нападении на базу врага</li>
+            <li>Ты был избранником! - убить главу гильдии на церемонии награждения</li>
+            <li>Добрый и злой полицейский - увидеть хоря и тука</li>
+            <li>Веган - не есть мясо в течении года</li>
+            <li>Орда! - набрать армию для атаки более 30 человечков</li>
+            <li>Фейерверк - посмотреть на взрыв ядерного реактора</li>
+            <li>Апокалипсис уже начался. - устроить взрыв атомного реактора</li>
+            <li>Это бронебитное орудие?! - скрафтить кирку с алмазным наконечником</li>
+            <li>Это - сама броня! - скрафтить самую прочную кирку</li>
+            <li>Лучший РАБотник - перевыполнить поставленную квоту будучи рабом</li>
+            <li>У них нет ни единого шанса! - будучи военным окружить повстанцев в городе/базе</li>
+            <li>Возможный провал - достичь дебафа к удаче -6</li>
+            <li>Плацебо - дать ложную надежду</li>
+            <li>Атмосфера - послушать все треки Hombresilo</li>
+            <li>Стандартизация - пройти игру на сложности “Normal”</li>
+            <li>Покой - победить кошмар</li>
+            <li>Дайвинг - нырнуть в акваланге</li>
+            <li>Живые города - найти подводный биом</li>
+            <li>Убойная мощь - использовать хвачху</li>
+            <li>Сепаратист - захватить робота Безднолита</li>
+            <li>Освобожденные от гнета - разбить камень Безднолит в поселении Безднолита</li>
+            <li>Житель мертвозоны - пробыть в мертвозоны белее 5 минут реального времени</li>
+          </ol>
+      </div>
+      <div class="p4">
+        <h3 class="contHard"  style="color: red;">Сложные достижения:</h3>
+          <ol class="contHard">
+            <li>Гурман - съесть все виды еды</li>
+            <li>Верх пищевой цепи - убить все виды мобов</li>
+            <li>ИИ - пройти 1000 уровней</li>
+            <li>Космический магистр - пройти 1000 уровней (космос)</li>
+            <li>Аннигиляция - взорвать целую планету</li>
+            <li>Он не один? -  увидеть другого Бога вселенной</li>
+            <li>Ульянший - уничтожить галактическую империю</li>
+            <li>Восстанец - уничтожить всё гильдии</li>
+            <li>Убийца императоров - уничтожить галактического императора</li>
+            <li>Легенда про убийцу богов - убить всех боссов</li>
+            <li>Спидран - пройти Hombresilo за час</li>
+            <li>Растворившись в небытие - потерять все сохранения за одного персонажа</li>
+            <li>Мастер диверсант - устроить диверсию не вызывая подозрений и воруя абсолютно все возможные предметы</li>
+            <li>Вера - победить страх и убить чувырлу</li>
+            <li>Свет всегда побеждает тьму - победить чарли</li>
+            <li>Пацифист - не убивать мобов в течении одного года</li>
+            <li>Финал? - найти KPbIM2017</li>
+            <li>Финал - завершить игру</li>
+            <li>Невозможное возможно - прочесть невозможный том</li>
+            <li>Жестокость - пройти игру на сложности “Hard”</li>
+            <li>Хардкор - пройти игру на сложности “Hardcore”</li>
+            <li>SUPERHOT - разбить красного человечка</li>
+            <li>Квадрат? - найти квадратную планету</li>
+            <li>Жестькулак - искоренить рабство во вселенной</li>
+            <li>Вырвиглаз - увеличить количество рабов во вселенной на 100%</li>
+          </ol>
+      </div>
+
+      <div class="hiden">
+        <h3 class="p5" id="M">Музыка:</h3>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">В меню игры:</p>
+          <audio controls>
+            <source src="audio/Hombresilo theme.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">Война:</p>
+          <audio controls>
+            <source src="audio/Hombresilo war.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">В деревне:</p>
+          <audio controls>
+            <source src="audio/Hombresilo in the village.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">Скрытно:</p>
+          <audio controls>
+            <source src="audio/Hombresilo stealth.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">Прятаться:</p>
+          <audio controls>
+            <source src="audio/Hombresilo hiding.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">Зима:</p>
+          <audio controls>
+            <source src="audio/Hombresilo winter.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">Пожар:</p>
+          <audio controls>
+            <source src="audio/Hombresilo fire.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">В магазине:</p>
+          <audio controls>
+            <source src="audio/Hombresilo shop.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">Взрыв ядерной станции:</p>
+          <audio controls>
+            <source src="audio/Hombresilo AES.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+        <div class="p5" style="display: inline-block;">
+          <p class="p5">В космосе:</p>
+          <audio controls>
+            <source src="audio/Hombresilo cosmos.mp3">
+            Ваш браузер не поддерживает данный аудио элемент.
+          </audio>
+        </div>
+      </div>
+
+      <div class="p6" id="M">
+        <h4>Валюты:</h4>
+        <ul>
+          <li>Рыбки (валюта в меню игры)</li>
+          <li>Каты (основная валюта на Маране)</li>
+          <li>Банджи (редкие монеты)</li>
+          <li>Кепсы (валюта в продвинутых племенах)</li>
+          <li>Воргсы (валюта в космосе)</li>
+          <li>Гапсы (валюта улья)</li>
+        </ul>
+      </div>
+        <div class="p6">
+          <h4>Ресурсы:</h4>
+          <ul>
+            <div style="display: inline-block;">
+              <li>Дерево</li>
+              <li>Камень</li>
+              <li>Сено</li>
+              <li>Уголь</li>
+              <li>Железо</li>
+              <li>Медь</li>
+              <li>Олово</li>
+              <li>Сера</li>
+              <li>Золото</li>
+              <li>Изумруд</li>
+              <li>Алмаз</li>
+            </div>
+            <div style="display: inline-block; margin-left: 60px;">
+              <li>Уран</li>
+              <li>Метеорит</li>
+              <li>Безднолит</li>
+              <li>Обсидиан</li>
+              <li>Литий</li>
+              <li>Магнетит</li>
+              <li>Электролит</li>
+              <li>Торий</li>
+              <li>Хартий</li>
+              <li>Алюминий</li>
+              <li>Кремень</li>
+            </div>
+          </ul>
+        </div>
+        <div class="p6">
+          <h4>Дополнения (за рыбки):</h4>
+          <ul>
+            <li>Уровни с мобами</li>
+            <li>Уровни с гильдиями</li>
+            <li>Уровни с доп.гильдиями</li>
+            <li>Режим "Осада" с мобами</li>
+            <li>Выживание за моба</li>
+            <li>Режим "Правители" за Улей</li>
+            <li>Все мобы в режиме "Боссфайт"</li>
+            <li>Режим "Зеркальный мир"</li>
+            <li>Режим "Государства"</li>
+            <li>Персонаж "Повелитель тьмы"</li>
+            <li>Добавляется меняющиеся в реальном времени курс валют</li>
+            <li>Добавление у всех гильдий своей разной валюты</li> 
+            <li>Новый босс "Повелитель тьмы"</li>
+            <li>Новый вид улья "Бездомный улей"</li>
+            <li>Способность превращения в убитых мобов</li>
+            <li>Начальные характеристики</li>
+            <li>Грибной мир</li>
+          </ul>
+        </div>
+        <div class="p6">
+          <h4>Сюжеты:</h4>
+          <ul>
+            <li>Тоска (жизнь в пещере 400 дней)</li>
+            <li>Вечная зима (пережить суровую зиму)</li>
+          </ul>
+        </div>
+        <div class="p6">
+          <h4>Комиксы:</h4>
+          <ul>
+            <li>"Проповедник"</li>
+            <li>"Безднолит"</li>
+            <li>"Пират"</li>
+            <li>"Повстанцы"</li>
+          </ul>
+        </div>
+        <div class="p6">
+          <h4>Обновления:</h4>
+          <p>
+            <b>0.1</b> 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 <b>1.0</b> 1.1 1.2 1.3 1.4
+            1.5 1.6 <b>1.7</b> 1.8 1.9 <b>2.0</b> 2.1 2.2 2.3 <b>2.4</b> 2.5 2.6
+            2.7 2.8 2.9 <b>3.0</b> 3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8
+            <b>3.9 4.0</b> 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 4.9
+            <b>5.0 5.1 5.2</b> 5.3 (следующее обновление в разработке)
+          </p>
+        </div>
+    </main>
+
+    <footer>
+       <p>Текущая версия игры: 5.3 <br> Создатели: Hombresilo Studio (Larfi и KPbIM2017) <br> Создатель сайта: Larfi</p>
+       <a href="https://docs.google.com/document/d/1st9nNkj2PSi7K_ywSNnf81bQKUXyJt014XobiYvevZI/edit?usp=drivesdk" type="button" class="btn btn-primary" target="_blank" style="width: 85x; font-size: smaller;">Google Docs</a>
+    </footer>
+
+  </body>
+  <script src="Hombresilo.js"></script>
+</html>

@@ -1,0 +1,235 @@
+.body {
+    background-color: rgb(245, 245, 229);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background-color: greenyellow;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+body.hidden header {
+    display: none;
+}
+
+body.hidden .btn.btn-primary.btnHeader {
+    display: none;
+}
+
+body.hidden .logo {
+    display: none;
+}
+
+#roll {
+    width: 40px;
+    height: 40px;
+    font-size: xx-small;
+    position: sticky;
+    top: 98px;
+    left: 100%;
+}
+
+body.hidden #roll {
+    font-size: xx-small;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    transform: rotate(180deg);
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgb(29, 29, 29);
+    color: rgb(226, 226, 226);
+}
+
+th, td {
+    padding: 25px;
+    border: 1px solid white !important;
+}
+
+@media (min-width: 935px) {
+    * {
+        font-size: 25px;
+    }
+}
+@media (max-width: 935px) {
+    * {
+        font-size: 25px;
+    }
+}
+@media (max-width: 840px) {
+    * {
+        font-size: 25px;
+    }
+    .btn.btn-primary.btnHeader {
+        font-size: 20px;
+    }
+}
+@media (max-width: 730px) {
+    * {
+        font-size: 20px;
+    }
+    .btn.btn-primary.btnHeader {
+        font-size: 15px;
+    }
+}
+@media (max-width: 570px) {
+    * {
+        font-size: 20px;
+    }
+    .btn.btn-primary.btnHeader {
+        font-size: 12px;
+    }
+    .btnH {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 350px) {
+    * {
+        font-size: 13px;
+    }
+    .btn.btn-primary.btnHeader {
+        font-size: 12px;
+    }
+    .btnH {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        height: 120px;
+    }
+}
+@media (min-width: 570px) {
+    .btnH {
+        display: block;
+    }
+}
+@media (min-width: 570px) {
+    footer {
+        height: 220px;
+    }
+}
+
+#M {
+    margin-top: 80px;
+}
+
+body.hidden #M {
+    margin-top: 0px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+[class*="p"],
+audio,
+.contEasy, .contMedium, .contHard,
+#tg1, #tg2, #tg3, #tg4, #tg5, #tg6, #tg7, #tg8, #tg9, #tg10, #tg11, #tg12, #tg13, #tm1, #tm2, #tm3, #tm4, #tm5, #tm6, #tm7, #tm8, #tm9, #tm10, #tm11, #tm12, #tm13, #tm14, #tm15, #tm16, #tm17, #tm18, #tm19, #tm20, #tm21, #tm22, #tm23, #tm24, #tm25,#tm26, #tm27, #tm28, #tm29, #tm30, #tm31, #tm32, #tm33, #tm34, #tm35, #tm36, #tm37,#tm38, #tm39, #tm40, #tm41, #tm42, #tm43, #tm44, #tm45, #tm46 {
+    display: none;
+}
+
+body.main .p,
+body.guilds .p2,
+body.mobs .p3,
+body.achievements .p4,
+body.music .p5,
+body.music audio,
+body.rest .p6,
+body.easy .contEasy,
+body.medium .contMedium,
+body.hard .contHard {
+    margin: 40px;
+    display: block;
+
+}
+
+body.guilds.g1 #tg1,
+body.guilds.g2 #tg2,
+body.guilds.g3 #tg3,
+body.guilds.g4 #tg4,
+body.guilds.g5 #tg5,
+body.guilds.g6 #tg6,
+body.guilds.g7 #tg7,
+body.guilds.g8 #tg8,
+body.guilds.g9 #tg9,
+body.guilds.g10 #tg10,
+body.guilds.g11 #tg11,
+body.guilds.g12 #tg12,
+body.guilds.g13 #tg13,
+body.mobs.m1 #tm1,
+body.mobs.m2 #tm2,
+body.mobs.m3 #tm3,
+body.mobs.m4 #tm4,
+body.mobs.m5 #tm5,
+body.mobs.m6 #tm6,
+body.mobs.m7 #tm7,
+body.mobs.m8 #tm8,
+body.mobs.m9 #tm9,
+body.mobs.m10 #tm10,
+body.mobs.m11 #tm11,
+body.mobs.m12 #tm12,
+body.mobs.m13 #tm13,
+body.mobs.m14 #tm14,
+body.mobs.m15 #tm15,
+body.mobs.m16 #tm16,
+body.mobs.m17 #tm17,
+body.mobs.m18 #tm18,
+body.mobs.m19 #tm19,
+body.mobs.m20 #tm44,
+body.mobs.m21 #tm21,
+body.mobs.m22 #tm22,
+body.mobs.m23 #tm23,
+body.mobs.m24 #tm24,
+body.mobs.m25 #tm25,
+body.mobs.m26 #tm26,
+body.mobs.m27 #tm27,
+body.mobs.m28 #tm28,
+body.mobs.m29 #tm29,
+body.mobs.m30 #tm30,
+body.mobs.m31 #tm31,
+body.mobs.m32 #tm32,
+body.mobs.m33 #tm33,
+body.mobs.m34 #tm34,
+body.mobs.m35 #tm35,
+body.mobs.m36 #tm36,
+body.mobs.m37 #tm37,
+body.mobs.m38 #tm38,
+body.mobs.m39 #tm39,
+body.mobs.m40 #tm40,
+body.mobs.m41 #tm41,
+body.mobs.m42 #tm42,
+body.mobs.m43 #tm20,
+body.mobs.m44 #tm44,
+body.mobs.m45 #tm45,
+body.mobs.m46 #tm46 {
+    display: block;
+    margin: 40px;
+}
+
+body.easy .contEasy,
+body.medium .contMedium,
+body.hard .contHard {
+    display: block;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
