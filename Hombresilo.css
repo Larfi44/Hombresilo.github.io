@@ -83,7 +83,7 @@ th, td {
 }
 @media (max-width: 570px) {
     * {
-        font-size: 15px;
+        font-size: 20px;
     }
     .btn.btn-primary.btnHeader {
         font-size: 12px;
@@ -99,7 +99,7 @@ th, td {
 }
 @media (max-width: 400px) {
     * {
-        font-size: 12px;
+        font-size: 15px;
     }
     .btn.btn-primary.btnHeader {
         font-size: 12px;
@@ -109,7 +109,7 @@ th, td {
         flex-direction: column;
     }
     footer {
-        height: 120px;
+        height: 140px;
     }
     #roll {
         width: 30px;
@@ -224,7 +224,6 @@ body.mobs.m44 #tm44,
 body.mobs.m45 #tm45,
 body.mobs.m46 #tm46 {
     display: block;
-    margin: 40px;
 }
 
 body.easy .contEasy,
