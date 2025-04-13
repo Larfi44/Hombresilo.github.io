@@ -9,10 +9,11 @@ header {
     background-color: greenyellow;
     font-size: 12px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    flex-wrap: wrap;
+    z-index: 1000;
 }
 
 body.hidden header {
@@ -47,14 +48,13 @@ body.hidden #roll {
 table {
     border-collapse: collapse;
     background-color: rgb(29, 29, 29);
-    color: rgb(226, 226, 226);
+    color: rgb(235, 235, 235);
 }
 
 th, td {
     padding: 25px;
     border: 1px solid white !important;
 }
-
 @media (min-width: 935px) {
     * {
         font-size: 25px;
@@ -83,7 +83,7 @@ th, td {
 }
 @media (max-width: 570px) {
     * {
-        font-size: 20px;
+        font-size: 15px;
     }
     .btn.btn-primary.btnHeader {
         font-size: 12px;
@@ -92,10 +92,14 @@ th, td {
         display: flex;
         flex-direction: column;
     }
+    #roll {
+        width: 35px;
+        height: 35px;
+    }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     * {
-        font-size: 13px;
+        font-size: 12px;
     }
     .btn.btn-primary.btnHeader {
         font-size: 12px;
@@ -107,13 +111,15 @@ th, td {
     footer {
         height: 120px;
     }
+    #roll {
+        width: 30px;
+        height: 30px;
+    }
 }
 @media (min-width: 570px) {
     .btnH {
         display: block;
     }
-}
-@media (min-width: 570px) {
     footer {
         height: 220px;
     }
@@ -151,7 +157,11 @@ body.medium .contMedium,
 body.hard .contHard {
     margin: 40px;
     display: block;
+}
 
+body.achievements .p4.no {
+    margin: 0px;
+    display: block;
 }
 
 body.guilds.g1 #tg1,

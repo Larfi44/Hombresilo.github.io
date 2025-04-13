@@ -95,6 +95,21 @@ for (var i = 1; i <= 13; i++) {
 document.getElementById('g' + i).addEventListener('click', guild);
 }
 
+function m45() {
+    for (let i = 1; i <= 46; i++) {
+        body.classList.remove('m' + i);
+    }
+    body.classList.add('m45')
+}
+function m46() {
+    for (let i = 1; i <= 46; i++) {
+        body.classList.remove('m' + i);
+    }
+    body.classList.add('m46')
+}
+
+document.getElementById('m45').addEventListener('click', m45);
+document.getElementById('m46').addEventListener('click', m46);
 
 function mobs() {
 const num = this.id.replace('m', '');
